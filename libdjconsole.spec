@@ -11,6 +11,8 @@ Source: %{name}-%{version}.tar.gz
 URL: http://djplay.sourceforge.net/
 BuildRequires: dbus-devel 
 BuildRequires: pkgconfig
+BuildRequires: hal-devel
+BuildRequires: libusb-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-build
 
 %description
