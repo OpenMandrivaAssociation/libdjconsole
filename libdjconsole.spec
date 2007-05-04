@@ -60,7 +60,7 @@ libdjconsole - Support for hardware dj consoles
 %setup -q
 
 %build
-export CFLAGS="$RPM_OPT_FLAGS"
+export CFLAGS="%optflags"
 
 %configure2_5x \
     --enable-static=no 
