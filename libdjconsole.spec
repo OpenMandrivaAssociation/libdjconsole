@@ -4,7 +4,7 @@
 Name: libdjconsole
 Summary: libdjconsole - Support for hardware dj consoles
 Version: 0.1.2
-Release: %mkrel 1
+Release: %mkrel 2
 License: LGPL
 Group: Development/Libraries
 Source: %{name}-%{version}.tar.gz
@@ -13,6 +13,7 @@ BuildRequires: dbus-devel
 BuildRequires: pkgconfig
 BuildRequires: hal-devel
 BuildRequires: libusb-devel
+BuildRequires: sed
 BuildRoot: %{_tmppath}/%{name}-%{version}-build
 
 %description
@@ -71,6 +72,10 @@ export CFLAGS="%optflags"
 
 %install
 make DESTDIR=%buildroot install
+
+# Fix pkgconfig file
+sed -i "s,-ldjconsole,-ldjconsole -lusb,g" %buildroot/%_libdir/pkgconfig/libdjconsole.pc
+sed -i "s,^libdir=.*,libdir=%_libdir,g" %buildroot/%_libdir/pkgconfig/libdjconsole.pc
 
 %clean
 rm -rf %buildroot 
