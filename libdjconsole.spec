@@ -14,7 +14,6 @@ BuildRequires: pkgconfig
 BuildRequires: hal-devel
 BuildRequires: libusb-devel
 BuildRequires: sed
-BuildRoot: %{_tmppath}/%{name}-%{version}-build
 
 %description
 libdjconsole - Support for hardware dj consoles
