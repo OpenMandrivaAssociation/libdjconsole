@@ -2,7 +2,7 @@
 %define lib_name %mklibname djconsole %{lib_major}
 
 Name: libdjconsole
-Summary: libdjconsole - Support for hardware dj consoles
+Summary: Libdjconsole - Support for hardware dj consoles
 Version: 0.1.2
 Release: %mkrel 2
 License: LGPL
