@@ -4,7 +4,7 @@
 Name: libdjconsole
 Summary: Libdjconsole - Support for hardware dj consoles
 Version: 0.1.2
-Release: %mkrel 2
+Release: %mkrel 4
 License: LGPL
 Group: Development/Libraries
 Source: %{name}-%{version}.tar.gz
