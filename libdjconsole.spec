@@ -7,7 +7,7 @@ Summary: Libdjconsole - Support for hardware dj consoles
 Version: 0.1.3
 Release: %mkrel 1
 License: LGPL
-Group: Development/Libraries
+Group: System/Libraries
 Source: %{name}-%{version}.tar.gz
 URL: http://djplay.sourceforge.net/
 BuildRequires: dbus-devel 
@@ -53,7 +53,7 @@ libdjconsole - Support for hardware dj consoles
 
 %package -n %{devel_name}
 Summary:  %{summary}
-Group: %{group}
+Group: Development/C++
 Provides: %{name}-devel
 Requires: %{lib_name} = %{version}
 Obsoletes: %{lib_name}-devel
