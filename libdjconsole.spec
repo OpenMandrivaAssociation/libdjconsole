@@ -5,7 +5,7 @@
 Name:		libdjconsole
 Summary:	Libdjconsole - Support for hardware dj consoles
 Version:	0.1.3
-Release:	5
+Release:	6
 License:	LGPL
 Group:		System/Libraries
 URL:		http://djplay.sourceforge.net/
