@@ -8,7 +8,7 @@ Version:	0.1.3
 Release:	6
 License:	LGPL
 Group:		System/Libraries
-URL:		http://djplay.sourceforge.net/
+URL:		https://djplay.sourceforge.net/
 Source:		%{name}-%{version}.tar.gz
 BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(libusb)
