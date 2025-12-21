@@ -10,6 +10,11 @@ License:	LGPL
 Group:		System/Libraries
 URL:		https://djplay.sourceforge.net/
 Source:		%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(libusb)
 Requires:	%{lib_name} = %{version}-%{release}
